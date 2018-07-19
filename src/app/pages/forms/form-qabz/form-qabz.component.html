@@ -1,0 +1,164 @@
+<nb-card>
+  <nb-card-header>
+    خدمات مشاهده و پرداخت قبض
+  </nb-card-header>
+  <nb-card-body>
+    <div class="container-fluid" id="form-qabz">
+      <table class="table table-border">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label">
+            <input name="" class="form-control form-control-primary" value="{{abBaha}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label20">
+            <input name="" class="form-control form-control-primary" value="{{bargeNumber}}" readonly>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label1">
+            <input name="" class="form-control form-control-primary" value="{{radif}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label2">
+            <input name="" class="form-control form-control-primary" value="{{eshterak}}" readonly>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label3">
+            <input name="currentReadingDate" class="form-control form-control-primary" value="{{currentReadingNumber}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label4">
+            <input name="currentId" class="form-control form-control-primary" value="{{preReadingNumber}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label5">
+            <input name="persianPayable" class="form-control form-control-primary" value="{{usageM3}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label6">
+            <input name="abBaha" class="form-control form-control-primary" value="{{rate}}" readonly>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label7">
+            <input name="abBaha" class="form-control form-control-primary" value="{{karmozdFazelab}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label8">
+            <input name="maliat" class="form-control form-control-primary" value="{{preDebtOrOwe}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label9">
+            <input name="karmozdFazelab" class="form-control form-control-primary" value="{{maliat}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label10">
+            <input name="boodje" class="form-control form-control-primary" value="{{boodje}}" readonly>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label11">
+            <input name="" class="form-control form-control-primary" value="{{jam}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label12">
+            <input name="" class="form-control form-control-primary" value="{{duration}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label13">
+            <input name="" class="form-control form-control-primary" value="{{currentReadingData}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label14">
+            <input name="" class="form-control form-control-primary" value="{{preReadingDate}}" readonly>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label21">
+            <input name="amountTime" class="form-control form-control-primary" value="{{usageLiter}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label18">
+            <input name="" class="form-control form-control-primary" value="{{payId}}" readonly>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2"></div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label22">
+            <nb-checkbox name="" class="form-control" [value]="isPayed" disabled></nb-checkbox>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label15">
+            <input name="payable" class="form-control form-control-danger" value="{{payable}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label16">
+            <input name="amountTime" class="form-control form-control-danger" value="{{deadLine}}" readonly>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2 has-label17">
+            <input name="billId" class="form-control form-control-danger" value="{{billId}}" readonly>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex p-2 has-label19">
+            <input name="" class="form-control form-control-primary" value="{{persianPayable}}" readonly>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex p-2">
+            <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#exModal" *ngIf="enablePayed == false">پرداخت</button>
+          </div>
+
+
+          <!--  *ngIf="enablePayed == false" for the top button-->
+
+
+          <div class="col-lg-6 d-flex justify-content-lg-end">
+            <!-- <ngx-barcode [bc-height]=22 [bc-value]="ngxBarcode" [bc-display-value]="true"></ngx-barcode> -->
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-lg-2 d-flex justify-content-center p-2">
+            <button type="button" class="btn btn-warning">بستن فرم</button>
+          </div>
+        </div>
+      </table>
+    </div>
+  </nb-card-body>
+</nb-card>
+
+<div class="modal" id="exModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">بانک مورد نظر را انتخاب فرمایید</h4>
+        <button type="button" class="close" style="margin-left: 1rem" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <a [href]="img.melliBank" target="_self" alt="MelliBank">
+              <img src="../../../../assets/images/bmi-300-c.png" class="rounded-circle">
+            </a>
+            <a [href]="img.mellatBank" target="_blank" alt="MellatBank">
+              <img src="../../../../assets/images/mellat-300-c.png" class="rounded-circle">
+            </a>
+            <a [href]="img.saderatBank" target="_blank" alt="SaderatBank">
+              <img src="../../../../assets/images/bsi-300-c.png" class="rounded-circle">
+            </a>
+            <a [href]="img.pasargadBank" target="_blank" alt="PasargadBank">
+              <img src="../../../../assets/images/bpi-300-c.png" class="rounded-circle">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">بازگشت</button>
+      </div>
+
+    </div>
+  </div>
+</div>

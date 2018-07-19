@@ -1,0 +1,359 @@
+<nb-card>
+
+  <nb-card-header>
+    فهرست خدمات انتخاب شده
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="0" value="0" (click)='onClick($event)' name="واگذاری انشعاب فاضلاب">
+            <!-- (click)='onClick($event)'  (change)="saveUsername = !saveUsername"  [checked]="saveUsername"-->
+            <label class="custom-control-label" for="0">واگذاری انشعاب فاضلاب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="1" name="تغییر ظرفیت قراردادی" id="1" (click)='onClick($event)'>
+            <label class="custom-control-label" for="1">تغییر ظرفیت قراردادی</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="2" name="تغییر مشخصات" id="2" (click)='onClick($event)'>
+            <label class="custom-control-label" for="2">تغییر مشخصات</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="3" name="تغییر مکان وسایل اندازه گیری" id="3" (click)='onClick($event)'>
+            <label class="custom-control-label" for="3">تغییر مکان کنتور</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="4" name="تغییر کاربری انشعاب" id="4" (click)='onClick($event)'>
+            <label class="custom-control-label" for="4">تغییر کاربری انشعاب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="5" name="تغییر قطر انشعاب" id="5" (click)='onClick($event)'>
+            <label class="custom-control-label" for="5">تغییر قطرانشعاب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="6" name="نصب سیفون اضافی" id="6" (click)='onClick($event)'>
+            <label class="custom-control-label" for="6">نصب سیفون اضافی</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="7" name="تغییر واحد" id="7" (click)='onClick($event)'>
+            <label class="custom-control-label" for="7">تغییر واحد</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="8" name="تغییر قطر سیفون" id="8" (click)='onClick($event)'>
+            <label class="custom-control-label" for="8">تغییر قطر سیفون</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="9" name="استعلام محضر" id="9" (click)='onClick($event)'>
+            <label class="custom-control-label" for="9">استعلام از محضر</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="10" name="قطع و وصل انشعاب" id="10" (click)='onClick($event)'>
+            <label class="custom-control-label" for="10">قطع و وصل انشعاب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="11" name="جابجایی سیفون" id="11" (click)='onClick($event)'>
+            <label class="custom-control-label" for="11">جابجایی سیفون</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="12" name="نظام مهندسی" id="12" (click)='onClick($event)'>
+            <label class="custom-control-label" for="12">نظام مهندسی</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="13" name="تغییر قطر انشعاب" id="13" (click)='onClick($event)'>
+            <label class="custom-control-label" for="13">تغییر قطرانشعاب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="14" name="نصب سیفون اضافی" id="14" (click)='onClick($event)'>
+            <label class="custom-control-label" for="14">نصب سیفون اضافی</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 p-1">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="15" name="تغییر واحد" id="15" (click)='onClick($event)'>
+            <label class="custom-control-label" for="15">تغییر واحد</label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+          <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" [minlength]="6" [maxLength]="13" placeholder="شناسه قبض" id="17" #billid="ngModel" value="{{billId}}" [(ngModel)]="billId" required>
+          <h6 *ngIf="billid.invalid && (billid.dirty || billid.touched)" class="alert alert-danger">
+            <h6 *ngIf="billid?.errors.required">
+              شناسه قبض را وارد فرمایید
+            </h6>
+            <h6 *ngIf="billid?.errors.minlength">باید بین 6 تا 13 رقم باشد</h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+          <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" class="form-control" placeholder="شماره همراه" id="18" [minlength]="11" [maxlength]="11" #notificationmobile="ngModel" [(ngModel)]="notificationMobile" value="{{notificationMobile}}" required>
+          <h6 *ngIf="notificationmobile.invalid && (notificationmobile.dirty || notificationmobile.touched)" class="alert alert-danger">
+            <h6 *ngIf="notificationmobile?.errors.required">
+              شماره موبایل را وارد فرمایید
+            </h6>
+            <h6 *ngIf="notificationmobile?.errors.minlength">باید 11 رقم باشد</h6>
+          </h6>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 p-3">
+          <button class="btn btn-primary btn-block" type="button" (click)="putData(billid.value , notificationmobile.value)" [disabled]="notificationmobile.invalid || billid.invalid">ارسال درخواست</button>
+        </div>
+      </div>
+
+
+    </div>
+  </nb-card-body>
+
+
+  <!-- <nb-card-body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="zone" placeholder="منطقه" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="id" placeholder="شناسه" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="issue tracking" placeholder="شماره پیگیری" class="form-control form-control-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="first name" placeholder="نام" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="last name" placeholder="نام خانوادگی" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="national code" placeholder="کد ملی" class="form-control form-control-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="tel" placeholder="تلفن همراه" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-8 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="address" placeholder="آدرس" type="text" class="form-control form-control-primary">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-lg-2 d-flex justify-content-center p-2">
+          <button type="button" class="btn btn-warning">بستن فرم</button>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card> -->
+
+
+
+
+  <!--
+<nb-card>
+  <nb-card-header>اطلاعات ارزیابی</nb-card-header>
+  <nb-card-body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="evaluator" placeholder="روز ارزیابی" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="evaluator name" placeholder="نام ارزیاب" class="form-control form-control-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="evaluator phone" placeholder="همراه ارزیاب" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="joint companion" placeholder="همراه مشترک" class="form-control form-control-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="first and lastname" placeholder="نام و نام خانوادگی" class="form-control form-control-primary">
+        </div>
+        <div class="col-lg-4 d-flex p-2">
+          <label class="sr-only"></label>
+          <input name="address" placeholder="آدرس" class="form-control form-control-primary">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-2 d-flex justify-content-center p-2">
+        <button type="button" class="btn btn-warning">بستن فرم</button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
+
+<nb-card>
+  <nb-card-header>
+    اطلاعات محاسبه و تقسیط
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="container-fluid">
+      <div class="row col-sm col-md-6 col-lg-6 d-flex p-2 float-right left-table-position">
+        <table class="table table-responsive-sm table-responsive-md table-responsive-lg table-striped table-hover table-border">
+          <caption id="right-column-caption">
+            <h6>اطلاعات محاسبه</h6>
+          </caption>
+          <thead>
+            <tr>
+              <th>
+                <label>عنوان</label>
+              </th>
+              <th>
+                <label>مبلغ</label>
+              </th>
+              <th>
+                <label>تخفیف</label>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label>عنوان</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>مبلغ</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>تخفیف</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+              <td>
+                <label>0</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row col-sm col-md-6 col-lg-6 d-flex p-2">
+      <table class="table table-responsive-sm table-responsive-md table-responsive-lg table-striped table-hover table-border">
+        <caption id="right-column-caption">
+          <h6>اطلاعات تقسیط و پرداخت</h6>
+        </caption>
+        <thead>
+          <tr>
+            <th>
+              <label>بها</label>
+            </th>
+            <th>
+              <label>عنوان</label>
+            </th>
+            <th>
+              <label>ش قبض</label>
+            </th>
+            <th>
+              <label>ش پرداخت</label>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label>55500023</label>
+            </td>
+            <td>
+              <label>55500023</label>
+            </td>
+            <td>
+              <label>55500023</label>
+            </td>
+            <td>
+              <label>55500023</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 d-flex justify-content-center p-2">
+        <button type="button" class="btn btn-warning">بستن فرم</button>
+      </div>
+    </div>
+
+  </nb-card-body>
+</nb-card> -->

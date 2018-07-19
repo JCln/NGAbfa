@@ -1,0 +1,117 @@
+<!-- <nb-card>
+  <nb-card-body>
+    <div class="d-flex justify-content-center">
+      <div class=" row">
+        <form class="go-right">
+          <div>
+            <input class=" form-control form-control-primary" id="trackingrequest" [minlength]="6" [maxLength]="13" type="text" autofocus
+              required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g)" #trackingrequest="ngModel"
+              [(ngModel)]="trackingRequest">
+            <label for="trackingrequest">شماره پیگیری</label>
+            <h6 *ngIf="trackingrequest.invalid && (trackingrequest.dirty || trackingrequest.touched)" class="alert alert-danger">
+              <h6 *ngIf="trackingrequest?.errors.required">
+                شماره پیگیری را وارد فرمایید
+              </h6>
+              <h6 *ngIf="trackingrequest?.errors.minlength">باید بین 6 تا 13 رقم باشد</h6>
+            </h6>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center p-4">
+      <button type="button" class="btn btn-success btn-icon" [disabled]="trackingrequest.invalid">
+        <i class="fa fa-sign-in"></i>
+      </button>
+    </div>
+    <div class="row d-flex justify-content-end p-2">
+      <button type="button" class="btn btn-warning">یادآوری شماره درخواست</button>
+    </div>
+
+  </nb-card-body>
+</nb-card>
+
+ -->
+
+
+<nb-card>
+  <nb-card-header>پیگیری درخواست ها</nb-card-header>
+
+  <nb-card-body>
+    <div class="container">
+
+      <div class="row">
+        <div class="mx-auto col-12 col-sm-9 col-md-6 col-lg-4">
+
+          <label for="tracking-request-id">پیگیری درخواست</label>
+          <input [minlength]="2" maxlength="11" class="form-control form-control-primary" autofocus required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g)"
+            #trackingrequest="ngModel" [(ngModel)]="trackingRequest">
+
+          <h6 *ngIf="trackingrequest.invalid && (trackingrequest.dirty || trackingrequest.touched)" class="alert alert-danger">
+            <h6 *ngIf="trackingrequest?.errors.required">شماره پیگیری را وارد فرمایید</h6>
+            <h6 *ngIf="trackingrequest?.errors.minlength">باید بین 2 تا 11 رقم باشد</h6>
+          </h6>
+
+          <div class="row d-flex justify-content-center p-4">
+            <button type="button" class="btn btn-success btn-block" (click)="putData(trackingRequest)" [disabled]="trackingrequest.invalid">
+              <!-- onclick="this.disabled=true; this.value='Please Wait...';" we can set this if button one time clicked -->
+              <i class="fa fa-sign-in"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="allowTable">
+  <nb-card-header>اطلاعات اقساط</nb-card-header>
+
+  <nb-card-body>
+    <div class="container-fluid">
+      <div class="row col-sm-12 d-flex p-2">
+        <table class="table table-responsive-sm table-hover
+         table-striped table-condensed table-bordered">
+          <thead>
+            <tr>
+              <th>ردیف</th>
+              <th>شناسه قبض</th>
+              <th>تاریخ</th>
+              <th>وضعیت</th>
+              <th>زمان</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-hover" *ngFor="let trackings of trackingData">
+              <td class="page-item">{{trackings.aidId}}</td>
+              <td>{{trackings.billID}}</td>
+              <td>{{trackings.dateJalali}}</td>
+              <td>{{trackings.status}}</td>
+              <td>{{trackings.hour}}:{{trackings.minute}}</td>
+              <td>{{trackings.description}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </nb-card-body>
+
+</nb-card>
+
+
+
+<!-- <div class="row d-flex justify-content-center p-4">
+        <button type="button" class="btn btn-success btn-icon ">
+          <i class="fa fa-sign-in"></i>
+        </button>
+      </div>
+
+      <div class="row d-flex justify-content-end p-2">
+        <button type="button" class="btn btn-warning">یادآوری شماره درخواست</button>
+      </div>
+
+    </nb-card-body>
+  </nb-card> -->

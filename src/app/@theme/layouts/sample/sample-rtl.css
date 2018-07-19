@@ -1,0 +1,7 @@
+    nb-sidebar.menu-sidebar {
+      right: 0 !important;
+      text-align: right;
+    }
+    a :hover {
+      cursor: pointer;
+    }

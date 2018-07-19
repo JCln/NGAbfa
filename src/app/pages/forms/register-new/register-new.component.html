@@ -1,0 +1,122 @@
+<nb-card>
+  <nb-card-header>
+    ثبت انشعاب جدید
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" [maxLength]="13" [minlength]="6" placeholder="شناسه قبض همسایه" id="2" required #neighbourbillid="ngModel"
+            [(ngModel)]="neighbourBillId">
+          <h6 *ngIf="neighbourbillid.invalid && (neighbourbillid.dirty || neighbourbillid.touched)" class="alert alert-danger">
+            <h6 *ngIf="neighbourbillid?.errors.required">
+              شناسه قبض همسایه را وارد فرمایید
+            </h6>
+            <h6 *ngIf="neighbourbillid?.errors.minlength">باید بین 6 تا 13 رقم باشد</h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" [maxLength]="11" [minlength]="11" placeholder="موبایل" id="3" required #mobile="ngModel" [(ngModel)]="Mobile">
+
+          <h6 *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="alert alert-danger">
+            <h6 *ngIf="mobile?.errors.required">
+              شماره موبایل را وارد فرمایید
+            </h6>
+            <h6 *ngIf="mobile?.errors.minlength">باید 11 رقم باشد</h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" [maxLength]="8" [minlength]="8" placeholder="تلفن ثابت" id="4" required #phonenumber="ngModel"
+            [(ngModel)]="phoneNumber">
+          <h6 *ngIf="phonenumber.invalid && (phonenumber.dirty || phonenumber.touched)" class="alert alert-danger">
+            <h6 *ngIf="phonenumber?.errors.required">تلفن ثابت را وارد فرمایید</h6>
+            <h6 *ngIf="phonenumber?.errors.minlength">باید 8 رقم باشد </h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" [maxlength]="10" [minlength]="10" placeholder="کد ملی" id="5" required
+            #notationid="ngModel" [(ngModel)]="nationalId">
+          <h6 *ngIf="notationid.invalid && (notationid.dirty || notationid.touched)" class="alert alert-danger">
+            <h6 *ngIf="notationid?.errors.required">کد ملی را وارد فرمایید</h6>
+            <h6 *ngIf="notationid?.errors.minlength">باید 10 رقم باشد</h6>
+          </h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" placeholder="نام پدر" id="6" required #fathername="ngModel" [(ngModel)]="fatherName">
+          <h6 *ngIf="fathername.invalid && (fathername.dirty || fathername.touched)" class="alert alert-danger">
+            <h6 *ngIf="fathername?.errors.required">
+              نام پدر را وارد فرمایید
+            </h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" placeholder="نشانی" id="7" required #address="ngModel" [(ngModel)]="Address">
+          <h6 *ngIf="address.invalid && (address.dirty || address.touched)" class="alert alert-danger">
+            <h6 *ngIf="address?.errors.required">
+              آدرس را وارد فرمایید
+            </h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" placeholder="نام" id="8" required #firstname="ngModel" [(ngModel)]="firstName">
+          <h6 *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)" class="alert alert-danger">
+            <h6 *ngIf="firstname?.errors.required">
+              نام را وارد فرمایید
+            </h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" placeholder="نام خانوادگی" id="9" required #surename="ngModel" [(ngModel)]="sureName">
+          <h6 *ngIf="surename.invalid && (surename.dirty || surename.touched)" class="alert alert-danger">
+            <h6 *ngIf="surename?.errors.required">
+              نام خانوادگی را وارد فرمایید
+            </h6>
+          </h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+          <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" [maxLength]="10" [minlength]="10" placeholder="کد پستی" id="10" required #postalcode="ngModel"
+            value="{{postalCode}}" [(ngModel)]="postalCode">
+          <h6 *ngIf="postalcode.invalid && (postalcode.dirty || postalcode.touched)" class="alert alert-danger">
+            <h6 *ngIf="postalcode?.errors.required">
+              کد پستی را وارد فرمایید
+            </h6>
+            <h6 *ngIf="postalcode?.errors.minlength">باید 10 رقم باشد</h6>
+          </h6>
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-lg-2 p-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="0" name="انشعاب 1" id="0" (click)='onClick($event)'>
+            <label class="custom-control-label" for="0">انشعاب‌آب</label>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 p-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" value="1" name="انشعاب 1.2" id="1" (click)='onClick($event)'>
+            <label class="custom-control-label" for="1">انشعاب فاضلاب</label>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+      <button class="btn btn-primary btn-block" type="button" (click)="putData(neighbourbillid.value, mobile.value,phonenumber.value ,
+      firstname.value , surename.value , fathername.value , address.value,notationid.value , postalcode.value)" [disabled]="neighbourbillid.invalid || notationid.invalid || phonenumber.invalid || mobile.invalid || fathername.invalid || address.invalid || firstname.invalid || surename.invalid || postalcode.invalid">ارسال درخواست</button>
+    </div>
+
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,23 @@
+/*  can't recognizing another scss class so changed files is in
+    tracking-request.component.scss */
+
+nb-card nb-card-body .d-flex .btn-icon ,#tracking-request-id {
+  width: 211px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.fa {
+  font-size: 1.2rem;
+}
+.table {
+  border-color: initial;
+
+}
